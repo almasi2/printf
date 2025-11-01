@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * printf_X - prints an hexgecimal number.
+ * printf_x - prints hexgecimal
  * @val: arguments.
  * Return: counter.
  */
-int printf_X(va_list val)
+int printf_x(va_list val)
 {
 	int i;
 	int *array;
@@ -29,7 +29,7 @@ int printf_X(va_list val)
 	for (i = counter - 1; i >= 0; i--)
 	{
 		if (array[i] > 9)
-			array[i] = array[i] + 7;
+			array[i] = array[i] + 39;
 		_putchar(array[i] + '0');
 	}
 	free(array);
